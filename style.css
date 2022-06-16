@@ -1,3 +1,7 @@
 body{
     background-color: rgb(170, 61, 197);
 }
+h1 {
+    font-size: 300%;
+    margin: 30px;
+}
