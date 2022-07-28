@@ -213,18 +213,14 @@ b.addEventListener('click', sendRequest);
 
 
 // 通信を開始する処理
-function sendRequest() {
-
-  genre = G001;
-	// URL を設定
-	let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+genre+'.json';
-      
-	// 通信開始
-	axios.get(url)
-		.then(showResult)
-		.catch(showError)
-		.then(finish);
+function a1() {
+  let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/G001.json";  
+  axios.get(url)
+  .then(showResult)
+  .catch(showError)
+  .then(finish);
 }
+
 
 // 通信が成功した時の処理
 function showResult(resp) {
