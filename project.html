@@ -4,65 +4,156 @@
     <meta charset="utf-8">
     <title>グルメ情報</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="gourmet.js" defer></script>
   </head>
 
   <body>
-
-    <label for="shimei">ジャンル: </label>
-    <input type="genre" name="shimei" id="shimei" size="10">
-    <button id="print">検索</button>
-    <table border = 1>
-
-        <thead>
-          <tr>
-            <th>項目名</th>
-            <th>項目の説明</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>access</td>
-            <td>アクセス情報</td>
-          </tr>
-        </tbody>
-
-        <tfoot>
-          <tr>
-            <td>name</td>
-            <td>店舗名</td>
-          </tr>
-        </tfoot>
-
-        <tnee>
-          <tr>
-            <td>open</td>
-            <td>営業時間</td>
-          </tr>
-        </tnee>
-      </table>
-      
-      <ol>
-        <li>G001 ... 居酒屋</li>
-        <li>G002 ... ダイニングバー・バル</li>
-        <li>G003 ... 創作料理</li>
-        <li>G004 ... 和食</li>
-        <li>G005 ... 洋食</li>
-        <li>G006 ... イタリアン・フレンチ</li>
-        <li>G007 ... 中華</li>
-        <li>G008 ... 焼肉・ホルモン</li>
-        <li>G009 ... アジア・エスニック料理</li>
-        <li>G010 ... 各国料理</li>
-        <li>G011 ... カラオケ・パーティ</li>
-        <li>G012 ... バー・カクテル</li>
-        <li>G013 ... ラーメン</li>
-        <li>G014 ... カフェ・スイーツ</li>
-        <li>G015 ... その他グルメ</li>
-        <li>G016 ... お好み焼き・もんじゃ</li>
-        <li>G017 ... 韓国料理</li>
+    <h1>グルメサイト</h1>
+    <ul>
+      <div class = 'a' id = "izakaya">
+        <ruby>
+            <li>
+              居酒屋
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'b' id = "daininnguba">
+        <ruby>
+            <li>
+              ダイニングバー・バル
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'c' id = "sousaku">
+        <ruby>
+            <li>
+              創作料理
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'd' id = "wasyoku">
+        <ruby>
+            <li>
+             和食
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'e' id = "yousyoku">
+        <ruby>
+            <li>
+              洋食
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'f' id = "itaria">
+        <ruby>
+            <li>
+              イタリアン・フレンチ
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'g' id = "chuka">
+        <ruby>
+            <li>
+              中華
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'h' id = "yakiniku">
+        <ruby>
+            <li>
+              焼肉・ホルモン
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'i' id = "ajia">
+        <ruby>
+            <li>
+              アジア・エスニック料理
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'j' id = "kakkoku">
+        <ruby>
+            <li>
+              各国料理
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'k' id = "karaoke">
+        <ruby>
+            <li>
+              カラオケ・パーティ
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'l' id = "bar">
+        <ruby>
+            <li>
+              バー・カクテル
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'm' id = "ramen">
+        <ruby>
+            <li>
+              ラーメン
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'n' id = "cafe">
+        <ruby>
+            <li>
+              カフェ・スイーツ
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'o' id = "sonota">
+        <ruby>
+            <li>
+              その他グルメ
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'p' id = "okonomiyaki">
+        <ruby>
+            <li>
+              お好み焼き・もんじゃ
+            </li>
+        </ruby>
+      </div>
+      <br>
+      <div class = 'q' id = "kankoku">
+        <ruby>
+            <li>
+              韓国料理
+            </li>
+        </ruby>
+      </div>
+      </ul>
      
-      </ol>
+      
+
+      
+       
+      
+     
 
 
     
