@@ -201,6 +201,8 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 
+
+
 for (let b of data.results.shop) {
 	console.log(b.name+" : "+b.name_kana);
 }
@@ -209,12 +211,12 @@ for (let b of data.results.shop) {
 
 
 let b = document.querySelector('#sendRequest');
-b.addEventListener('click', sendRequest);
+b.addEventListener('click', a1);
 
 
 // 通信を開始する処理
 function a1() {
-  let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/G001.json";  
+  let url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json";  
   axios.get(url)
   .then(showResult)
   .catch(showError)
@@ -226,6 +228,8 @@ function a1() {
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
 	let data = resp.data;
+  let aa = document.querySelector('#name');
+  
 
 	// data が文字列型なら，オブジェクトに変換する
 	if (typeof data === 'string') {
@@ -237,6 +241,9 @@ function showResult(resp) {
 
 	// data.x を出力
 	console.log(data.x);
+  aa.textContent=resp.data.result1.shop[0].name;
+ 
+
 }
 
 // 通信エラーが発生した時の処理
@@ -249,6 +256,36 @@ function finish() {
 	console.log('Ajax 通信が終わりました');
 }
 
+
+let result1 = document.querySelector("span#result1");
+
+
+
+let a = document.querySelector('div#izakaya');
+a.addEventListener('click', a1);
+
+function a1() {
+  let url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json";  
+  axios.get(url)
+  .then(showResult)
+  .catch(showError)
+  .then(finish);
+}
+
+function showResult(resp) {
+  let data = resp.data;
+  if (typeof data === 'string') {
+      data = JSON.parse(data);
+  }
+
+  aa.textContent=resp.data.result1.shop[0].name;
+
+  function showError(err) {
+    console.log(err);
+}
+function finish() {
+    console.log('Ajax 通信が終わりました');
+}
 
 
 
