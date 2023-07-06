@@ -2,172 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>グルメ情報</title>
     <link rel="stylesheet" href="project.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
-    <script src="gourmet.js" defer></script>
+    <title>世界の天気</title>
+
+    <script src="weather.js" defer></script>
+
+    <div class="wrapper">
+      <div class="arc">
+      </div>
+    </div>
   </head>
 
   <body>
-    <h1>グルメサイト</h1>
-    <div class = 'b'><div class = 'a'></div>
-    <ul>
-      <div class = 'a' id = "izakaya">
-        <ruby>
-            <li>
-              
-              居酒屋
-            
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'b' id = "daininnguba">
-        <ruby>
-            <li>
-              ダイニングバー・バル
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'c' id = "sousaku">
-        <ruby>
-            <li>
-              創作料理
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'd' id = "wasyoku">
-        <ruby>
-            <li>
-             和食
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'e' id = "yousyoku">
-        <ruby>
-            <li>
-              洋食
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'f' id = "itaria">
-        <ruby>
-            <li>
-              イタリアン・フレンチ
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'g' id = "chuka">
-        <ruby>
-            <li>
-              中華
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'h' id = "yakiniku">
-        <ruby>
-            <li>
-              焼肉・ホルモン
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'i' id = "ajia">
-        <ruby>
-            <li>
-              アジア・エスニック料理
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'j' id = "kakkoku">
-        <ruby>
-            <li>
-              各国料理
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'k' id = "karaoke">
-        <ruby>
-            <li>
-              カラオケ・パーティ
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'l' id = "bar">
-        <ruby>
-            <li>
-              バー・カクテル
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'm' id = "ramen">
-        <ruby>
-            <li>
-              ラーメン
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'n' id = "cafe">
-        <ruby>
-            <li>
-              カフェ・スイーツ
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'o' id = "sonota">
-        <ruby>
-            <li>
-              その他グルメ
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'p' id = "okonomiyaki">
-        <ruby>
-            <li>
-              お好み焼き・もんじゃ
-            </li>
-        </ruby>
-      </div>
-      <br>
-      <div class = 'q' id = "kankoku">
-        <ruby>
-            <li>
-              韓国料理
-            </li>
-        </ruby>
-      </div>
-      </ul>
-      <div>
-
-        <div class = 'd' id = "result1">
-      
-          <span onClick="document.all.item('moji1').style.visibility='visible'">
-            居酒屋
-            </span>
-            
-            <div ID="moji1" style="visibility:hidden;">
-            時間
-            </div>
-            
-      
-           
-      
-     
-
-
+    <h1>世界の天気の検索結果を表示する</h1> 
+            <ul>
+                <li>シンガポール</li>
+                <li>晴れ</li>
+                <li>最高気温33度</li>
+                <li>最低気温17度</li>
+                <li>湿度14</li>
+            </ul>
+    </table>
     
+
+
+
+
+  <div id="result"></div>
   </body>
-</html>
