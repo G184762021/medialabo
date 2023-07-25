@@ -1,33 +1,143 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Project課題天気</title>
     <link rel="stylesheet" href="project.css">
-    <title>世界の天気</title>
-
-    <script src="weather.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"  defer></script>
-
-    <div class="wrapper">
-      <div class="arc">
-      </div>
-    </div>
+    <script src="weather.js" defer></script>
   </head>
 
   <body>
-    <h1>世界の天気の検索結果を表示する</h1> 
-            <ul>
-                <li>シンガポール</li>
-                <li>晴れ</li>
-                <li>最高気温33度</li>
-                <li>最低気温17度</li>
-                <li>湿度14</li>
-            </ul>
-    </table>
+    <h1>世界の天気</h1>
+      <div class = 'b'><div class = 'a'>
+        <ul>
+        <div class = '1' id = "cairo">
+          <ruby>
+              <li>
+                Cairo
+                <rt>カイロ（エジプト）</rt>
+              </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '2' id = "moscow">
+          <ruby>
+              <li>
+                Moscow
+                <rt>モスクワ（ロシア）</rt>
+              </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '3' id = "johannesburg">
+          <ruby>
+            <li>
+              Johannesburg
+              <rt>ヨハネスブルク（南アフリカ）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '4' id = "beijing">
+          <ruby>
+            <li>
+              Beijing
+              <rt>北京（中華人民共和国）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '5' id = "tokyo">
+          <ruby>
+            <li>
+              Tokyo
+              <rt>東京（日本）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '6' id = "singapore">
+          <ruby>
+            <li>
+              Singapore
+              <rt>シンガポール</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '7' id = "sydney">
+          <ruby>
+            <li>
+              Sydney
+              <rt>シドニー（オーストラリア）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '8' id = "london">
+          <ruby>
+            <li>
+              London
+              <rt>ロンドン（イギリス）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '9' id = "paris">
+          <ruby>
+            <li>
+              Paris
+              <rt>パリ（フランス）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '10' id = "riodejaneiro">
+          <ruby>
+            <li>
+              Rio de Janeiro
+              <rt>リオデジャネイロ（ブラジル）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '11' id = "newyork">
+          <ruby>
+            <li>
+              New York
+              <rt>ニューヨーク（アメリカ合衆国）</rt>
+            </li>
+          </ruby>
+        </div>
+        <br>
+        <div class = '12' id = "losangeles">
+          <ruby>
+            <li>
+              Los Angeles
+              <rt>ロサンゼルス（アメリカ合衆国）</rt>
+            </li>
+          </ruby>
+        </div>
+      </ul></div>
+
+      <h2>検索結果</h2>
     
-
-
-
-
-  <div id="result"></div>
+    <div class = 'x' id = "result"><div class = 'y'>
+      <span id = "result1"></span>
+    </div><div class = 'y'><div class = 'z'>
+      <span id = "result2"></span>
+      <br>
+      <span id = "result3"></span>
+      <br>
+      <span id = "result4"></span>
+      <br>
+      <span id = "result5"></span>
+      <br>
+      <span id = "result6"></span>
+      <br>
+      <span id = "result7"></span>
+      <br>
+      <span id = "result8"></span>
+    </div></div></div>
   </body>
+</html>
