@@ -6,7 +6,6 @@ let result5 = document.querySelector("span#result5");
 let result6 = document.querySelector("span#result6");
 let result7 =document.querySelector("span#result7");
 let result8 =document.querySelector("span#result8");
-// let result_img = document.createElement('img');
 
 
 let a = document.querySelector('div#cairo');
@@ -33,30 +32,6 @@ let k = document.querySelector('div#newyork');
 k.addEventListener('click', newyorktenki);
 let l = document.querySelector('div#losangeles');
 l.addEventListener('click', losangelestenki);
-let m = document.querySelector('img#cai');
-m.addEventListener('click', cairotenki);
-let n = document.querySelector('img#mos');
-n.addEventListener('click', moscowtenki);
-let o = document.querySelector('img#burg');
-o.addEventListener('click', johannesburgtenki);
-let p = document.querySelector('img#pekin');
-p.addEventListener('click', beijingtenki);
-let q = document.querySelector('img#tokyo');
-q.addEventListener('click', tokyotenki);
-let r = document.querySelector('img#singa');
-r.addEventListener('click', singaporetenki);
-let s = document.querySelector('img#sido');
-s.addEventListener('click', sydneytenki);
-let t = document.querySelector('img#london');
-t.addEventListener('click', londontenki);
-let u = document.querySelector('img#pari');
-u.addEventListener('click', paristenki);
-let v = document.querySelector('img#rio');
-v.addEventListener('click', riodejaneirotenki);
-let w = document.querySelector('img#new');
-w.addEventListener('click', newyorktenki);
-let x = document.querySelector('img#los');
-x.addEventListener('click', losangelestenki);
 
 function cairotenki() {
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
@@ -150,24 +125,7 @@ function showResult(resp) {
     }
     let y =data.weather[0].description;
     let z;
-    // if (y==='晴天'){
-    //     z = "hare.png";
-    // } else if (y==="厚い雲"||y==="雲"||y==="曇りがち"){
-    //     z = "kumo.png";
-    // } else if (y==="小雨") {
-    //     z = "ame.png";
-    // } else if (y==="霧") {
-    //     z = "kiri.png";
-    // } else {
-    //     z = null;
-    // }
-    // if(data.name === "State of Rio de Janeiro"){
-    //     data.name = "リオデジャネイロ";
-    // } else if (data.name === "Paris"){
-    //     data.name = "パリ";
-    // }
-    // result_img.setAttribute('src', z);
-    // result1.insertAdjacentElement("beforeend", result_img);
+    
     result2.textContent =data.name+"の天気";
     result3.textContent =data.weather[0].description;
     result4.textContent ="最高気温："+data.main.temp_max+"℃";
